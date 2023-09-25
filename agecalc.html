@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./agecalc.css" />
+    <link rel="stylesheet" href="/public/styles.css" />
+    <link rel="stylesheet" href="/public/project/css/all.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/8ca1abac86.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-gray-300 font-sans">
+    <div class="main-container flex justify-center items-center h-screen">
+      <div
+        class="container bg-white main px-3 py-5 rounded-md rounded-br-3xl space-y-10 w-64"
+      >
+        <div class="form">
+          <form id="form" class="space-y-10">
+            <div class="input flex space-x-4">
+              <div class="day w-4/12">
+                <span class="font-bold text-gray-700 text-xs">DAY</span>
+                <input
+                  type="numberdiv"
+                  placeholder="DD"
+                  id="day"
+                  class="border border-gray-300 p-2 rounded font-extrabold focus:outline-none w-16"
+                />
+              </div>
+              <div class="month w-4/12" id="monthdiv">
+                <span class="font-bold text-gray-700 text-xs">MONTH</span>
+                <input
+                  type="number"
+                  placeholder="MM"
+                  id="month"
+                  class="border border-gray-300 p-2 rounded font-extrabold focus:outline-none w-16"
+                />
+              </div>
+              <div class="yeardiv w-4/12">
+                <span class="font-bold text-gray-700 text-xs">YEAR</span>
+                <input
+                  type="number"
+                  placeholder="YYYY"
+                  id="year"
+                  class="border border-gray-300 p-2 rounded font-extrabold focus:outline-none w-16"
+                />
+              </div>
+            </div>
+            <div class="output">
+              <div class="border-b border-gray-200 relative top-6 z-0"></div>
+              <div class="flex items-center justify-center">
+                <button
+                  type="submit"
+                  class="rounded-full bg-purple-700 w-12 h-12 z-10"
+                >
+                  <i class="fa-solid fa-arrow-down fa-2xl text-white"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div id="output"></div>
+      </div>
+    </div>
+    <script src="agecalc.js"></script>
+  </body>
+</html>
